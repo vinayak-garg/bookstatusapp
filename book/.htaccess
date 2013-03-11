@@ -1,0 +1,8 @@
+DirectorySlash Off
+
+RewriteEngine On
+
+RewriteBase /bookstatusapp/book/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [QSA,L]
