@@ -16,9 +16,6 @@ var BooksCollection = Backbone.Collection.extend({
 var ViewallView = Backbone.View.extend({
     el: 'div#content',
     template: _.template($('#viewallTemplate').html()),
-    //initialize: function(){
-    //    _.bindAll(this, "render");
-    //},
     render: function(e){
         $(this.el).html(this.template({books: e}));
     }
@@ -115,7 +112,6 @@ var AppRouter = Backbone.Router.extend({
     },
 
     viewall: function(){
-        //window.booksCollection = new BooksCollection();
         this.viewallView = new ViewallView();
         var self = this;
         window.booksCollection.fetch({
