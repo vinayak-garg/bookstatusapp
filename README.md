@@ -13,4 +13,4 @@ Configuration required for local testing
  - Edit database details in **book/dbconfig.php**
  - Edit RewriteBase in **book/.htaccess**
 
-You can test app live [here](http://bookstatusapp.eu5.org), but please don't mess it. Instead add some good books!
+Enjoy!
